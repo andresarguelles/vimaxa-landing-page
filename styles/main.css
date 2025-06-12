@@ -182,8 +182,10 @@ body {
 
 .gallery img {
     width: 200px;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
     border-radius: 8px;
+    aspect-ratio: 1 / 1;
 }
 
 /* Footer */
