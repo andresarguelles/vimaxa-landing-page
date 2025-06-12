@@ -3,29 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- agreamos logo -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="./assets/icons/vimaxa_icon.webp" type="image/png">
     <link rel="stylesheet" href="./styles/main.css">
     <title>Vimaxa</title>
 </head>
 <body class="whole-page">
     <header class="header container">
-        <div class="logo-container">
+        <div class="header-item logo">
             <img id="logo-icon" src="./assets/icons/vimaxa_icon.webp" alt="Vimaxa Icon">
             <img id="logo-letras" src="./assets/icons/logo_letras.png" alt="Vimaxa Logo">
         </div>
         <nav>
-            <ul id="nav-list">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#vacantes">Vacantes</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+            <ul class="header-item nav-menu">
+                <li class="nav-menu-item"><a href="#inicio" class="nav-menu-link">Inicio</a></li>
+                <li class="nav-menu-item"><a href="#nosotros" class="nav-menu-link">Nosotros</a></li>
+                <li class="nav-menu-item"><a href="#vacantes" class="nav-menu-link">Vacantes</a></li>
+                <li class="nav-menu-item"><a href="#contacto" class="nav-menu-link">Contacto</a></li>
             </ul>
         </nav>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="header-item menu-toggle" id="menu-toggle">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <!-- <i class='bx bx-x' id="close-icon"></i> -->
         </div>
     </header>
     <main class="main container">

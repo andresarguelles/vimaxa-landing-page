@@ -24,46 +24,50 @@ body {
 
 /* Header y navegación */
 .header {
+    background-color: #fff;
+    max-height: 100px;
     position: sticky;
+    width: 100%;
     top: 0;
     z-index: 1000;
-    background-color: #fff;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 1rem 0;
 }
 
-.header .logo-container{
+.header .logo{
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
 .header #logo-icon {
-    max-width: 100px;
-    height: auto;
+    max-height: 50px;
+    width: auto;
+    display: block;
 }
 
 .header #logo-letras {
-    max-width: 200px;
-    height: auto;
+    max-height: 50px;
+    width: auto;
+    display: block;
 }
 
-nav ul {
+.nav-menu {
     display: flex;
     list-style: none;
     gap: 1.5rem;
 }
 
-nav a {
+.nav-menu-link {
     text-decoration: none;
     color: var(--color3);
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
-nav a:hover {
+.nav-menu-link:hover {
     color: var(--color1);
 }
 
@@ -192,52 +196,42 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background-color: white;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: 200px;
-        padding: 1rem;
-        border-left: 2px solid var(--color3);
-        border-bottom: 2px solid var(--color3);
-    }
-
-    nav ul.active {
-        display: flex;
-    }
-    
-    .header {
-        justify-content: center;
-    }
-
-    .section#inicio .content {
-        flex-wrap: wrap;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-}
-
-.hamburger {
-    flex-direction: column;
-    gap: 5px;
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: var(--color3);
     cursor: pointer;
 }
 
-.hamburger span {
-    height: 3px;
-    width: 25px;
-    background-color: var(--color3);
-    display: block;
-    border-radius: 2px;
+/* Responsivo */
+@media (max-width: 768px) {
+    .header {
+        justify-content: space-around;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        gap: 2rem;
+        padding: 3rem 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .main .content {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
-
-
-
-
