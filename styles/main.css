@@ -7,6 +7,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-padding-top: 100px; /* Ajusta a la altura real de tu header */
+}
+
 body {
     background-color: #ffffff;
     color: #333;
