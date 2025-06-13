@@ -5,4 +5,19 @@
     <lastmod>2025-06-12</lastmod>
     <priority>1.00</priority>
   </url>
+  <url>
+    <loc>https://enlacevimaxa.com/#nosotros</loc>
+    <lastmod>2025-06-12</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://enlacevimaxa.com/#vacantes</loc>
+    <lastmod>2025-06-12</lastmod>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://enlacevimaxa.com/#contacto</loc>
+    <lastmod>2025-06-12</lastmod>
+    <priority>0.80</priority>
+  </url>
 </urlset>
