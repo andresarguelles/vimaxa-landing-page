@@ -456,3 +456,16 @@ body {
         gap: 0.5rem;
     }
 }
+
+/* logica de toggle button */
+#close-icon {
+    display: none;
+}
+
+#close-icon.active {
+    display: block;
+}
+
+#menu-icon.hidden {
+    display: none;
+}
