@@ -25,7 +25,7 @@ function updateWhatsappButtonVisibility() {
     const btn = document.querySelector('.whatsapp-float');
     if (!btn) return;
     const isMobile = window.innerWidth <= 768;
-    const scrollLimit = isMobile ? 300 : 30;
+    const scrollLimit = isMobile ? 420 : -1;
     if (window.scrollY > scrollLimit) {
         btn.style.display = 'flex';
     } else {
