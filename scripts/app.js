@@ -19,3 +19,26 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+// Mostrar el botón de WhatsApp al hacer scroll, con diferentes valores según el tamaño de pantalla
+function updateWhatsappButtonVisibility() {
+    const btn = document.querySelector('.whatsapp-float');
+    if (!btn) return;
+    const isMobile = window.innerWidth <= 768;
+    const scrollLimit = isMobile ? 300 : 30;
+    if (window.scrollY > scrollLimit) {
+        btn.style.display = 'flex';
+    } else {
+        btn.style.display = 'none';
+    }
+}
+
+window.addEventListener('scroll', updateWhatsappButtonVisibility);
+window.addEventListener('resize', updateWhatsappButtonVisibility);
+
+// Ocultar inicialmente y actualizar visibilidad al cargar
+document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.querySelector('.whatsapp-float');
+    if (btn) btn.style.display = 'none';
+    updateWhatsappButtonVisibility();
+});
