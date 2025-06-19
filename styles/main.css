@@ -495,3 +495,52 @@ body {
 .whatsapp-float:hover {
   transform: scale(1.2);
 }
+
+
+.afiliados-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+  list-style: none;
+  margin: 0;
+}
+
+.afiliado {
+  flex: 1 1 180px;
+  max-width: 220px;
+  background-color: #ffffff;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  text-align: center;
+  padding: 1.2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.afiliado:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(107, 45, 146, 0.1); /* sombra color3 */
+}
+
+.afiliado a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.afiliado-logo {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+}
+
+.afiliado p {
+  font-weight: 600;
+  color: #6b2d92; /* color3 */
+  margin: 0;
+  font-size: 1rem;
+}
