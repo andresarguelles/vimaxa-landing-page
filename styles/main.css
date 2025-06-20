@@ -538,9 +538,36 @@ body {
   object-fit: contain;
 }
 
-.afiliado p {
+.afiliado h3 {
   font-weight: 600;
   color: #6b2d92; /* color3 */
-  margin: 0;
   font-size: 1rem;
+}
+
+/* .afiliado address {
+  font-style: normal;
+  font-size: 0.8rem;
+  color: #4b5563;
+  margin-top: 0.5rem;
+  line-height: 1.6;
+} */
+
+.contacto-iconos {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.contacto-iconos a {
+  color: #6b2d92;
+  background-color: rgba(107, 45, 146, 0.08);
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.contacto-iconos a:hover {
+  background-color: rgba(107, 45, 146, 0.2);
 }
