@@ -1,6 +1,6 @@
 # Vimaxa Landing Page
 
-Este proyecto es una landing page para **Vimaxa**, una empresa dedicada a la adquisición de nuevos clientes a través de estrategias innovadoras y efectivas. La página está diseñada para reflejar la misión, visión y valores de la empresa, así como para atraer talento y mostrar las oportunidades laborales disponibles.
+Este proyecto es una landing page para **Enlace Vimaxa**, una empresa dedicada a la adquisición de nuevos clientes a través de estrategias innovadoras y efectivas. La página está diseñada para reflejar la misión, visión y valores de la empresa, así como para atraer talento y mostrar las oportunidades laborales disponibles.
 
 Actualmente, el sitio web está publicado y disponible en: [www.enlacevimaxa.com](https://www.enlacevimaxa.com)
 
