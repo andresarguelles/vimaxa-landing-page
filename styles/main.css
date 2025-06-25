@@ -381,7 +381,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 2rem;
-  margin-top: 2rem;
+  flex: 1 1 20%;
 }
 
 .info-contacto {
@@ -393,19 +393,31 @@ body {
   padding: 0;
   font-size: 1rem;
   color: #4b5563;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
 }
 
 .info-contacto li {
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
+  margin-top: .5rem;
 }
 
 .info-contacto a {
-  color: #6b2d92; /* color3 */
+  color: #333; /* color3 */
   text-decoration: none;
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.info-contacto .bx {
+  font-size: 1.5rem;
 }
 
 .info-contacto a:hover {
-  text-decoration: underline;
+  color: var(--color3);
 }
 
 .mapa {
@@ -548,14 +560,6 @@ body {
   color: #6b2d92; /* color3 */
   font-size: 1rem;
 }
-
-/* .afiliado address {
-  font-style: normal;
-  font-size: 0.8rem;
-  color: #4b5563;
-  margin-top: 0.5rem;
-  line-height: 1.6;
-} */
 
 .contacto-iconos {
   margin-top: 1.5rem;
