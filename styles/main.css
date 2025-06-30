@@ -181,17 +181,22 @@ body {
 /* Galería */
 .gallery {
     display: flex;
-    flex-wrap: wrap;
+    overflow-x: scroll;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    scroll-padding: 1rem;
     gap: 1rem;
-    justify-content: center;
+    padding: 1rem;
 }
 
-.gallery img {
+.gallery-image {
     width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
     aspect-ratio: 1 / 1;
+    scroll-snap-align: center;
 }
 
 /* Footer */
@@ -516,23 +521,27 @@ body {
 
 .afiliados-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  overflow-x: scroll;
+  width: 100%;
+  scroll-snap-type: x mandatory;
+  scroll-snap-stop: always;
+  scroll-padding: 1rem;
+  border-radius: .8rem;
   gap: 1rem;
-  padding: 2rem 0;
-  list-style: none;
-  margin: 0;
+  list-style-type: none;
+  padding: 1rem;
 }
 
 .afiliado {
   flex: 1 1 180px;
   max-width: 220px;
   background-color: #ffffff;
-  border: 2px solid #e5e7eb;
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.1);
   border-radius: 12px;
   text-align: center;
-  padding: 1.2rem;
+  padding: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  scroll-snap-align: center;
 }
 
 .afiliado:hover {
